@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #040B15;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #040B15; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(22, 20, 60); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(53, 40, 128); 
+}
+main {
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100vh;
+  transition: all 0.7s;
+  color: white;
+}
+
+.background {
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(4, 11, 21, 0.845);
+}
+
+.main-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: poppins;
+  text-align: center;
+}
+
+.main-item h1 {
+  font-size: 40px;
+  color: #5b59c5;
+}
+
+.main-item h1 span {
+  color: #ffffff;
+}
+
+.main-item p {
+  font-size: 20px;
+  color: white;
+}
+
+.main-item button {
+  background-color: transparent;
+  outline: none;
+  border-radius: 25px;
+  border: solid 2px #5b59c5;
+  color: #5b59c5;
+  padding: 5px 15px;
+  margin-top: 15px;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-item button:hover {
+  border-color: #5b59c5;
+  background-color: #5b59c5;
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+}
+
+.login-page {
+  height: 100vh;
+  background-image: url('../images/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.personalDetails{
+  height: 100vh;
+  background-image: url('../images/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.achievement{
+  height: 100vh;
+  background-image: url('../images/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.universityDetails{
+  height: 100vh;
+  background-image: url('../images/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.skills{
+  height: 100vh;
+  background-image: url('../images/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact{
+  height: 100vh;
+  background-image: url('../images/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-page .overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.login-page .log-content {
+  background-color: #040B15;
+  box-shadow: rgba(0, 0, 0) 0px 3px 8px;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  width: 300px;
+}
+
+.login-page .log-content h2 {
+  margin-bottom: 10px;
+}
+
+.login-page .log-content p {
+  margin-bottom: 5px;
+}
+
+.log-content input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: transparent;
+  border-radius: 25px;
+  border: 2px solid #5b59c5;
+  height: 28px;
+  color: white;
+  caret-color: #5b59c5;
+  outline: none;
+}
+
+.log-content input:focus, .log-content input:hover {
+  border: 2px solid #afadff;
+  caret-color: #afadff;
+}
+
+.log-content button {
+  background: #5b59c5;
+  border-radius: 25px;
+  border: 2px solid #5b59c5;
+  color: #ffffff;
+  padding: 5px 15px;
+  margin-top: 15px;
+  transition: all 0.4s ease-in-out;
+  width: 100%;
+}
+
+.log-content button:hover {
+  background: #afadff;
+  border-color: #afadff;
+}
+
+.log-content button:active {
+  background: transparent;
+  border-color: #5b59c5;
+  color: #5b59c5;
+  transition: all 0.2s ease-in-out;
+}
+
+.log-content form {
+  margin-bottom: 20px;
+}
+
+.log-content .sign {
+  font-size: 12px;
+}
+
+/* home */
+
+.head-content {
+  position: fixed;
+  z-index: 2;
+  width: 300px;
+  min-height: 100vh;
+  background-color: #040B15;
+}
+.head-content .head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.head-content .profile-img {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 2px solid #5b59c5;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-content .profile-img img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.head-content .head .prof-name {
+  color: white;
+}
+.head-content .head .social-icon {
+  color: white;
+  margin-top: 15px;
+}
+.head-content .head .social-icon .icon-cont {
+  border-radius: 50%;
+  background-color: #323542;
+  width: 29px;
+  height: 29px;
+  display: inline-flex;
+}
+
+.head-content .head .social-icon .icon-cont:hover {
+  background-color: #5b59c5;
+}
+.head-content .head .social-icon i {
+  margin: auto;
+}
+.head-content .head .social-icon .icon-cont:not(:last-of-type) {
+  margin-right: 12px;
+}
+.head-content .nav-bar {
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav-bar ul {
+  margin-left: 25%;
+}
+.nav-bar ul li {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.nav-bar ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.502);
+  font-size: 15px;
+}
+.nav-bar ul li a:hover {
+  color: rgba(255, 255, 255);
+}
+
+.nav-bar ul li a:hover i {
+  color: #5b59c5;
+}
+
+.nav-bar li a i {
+  padding-right: 10px;
+}
+.main-content {
+  margin-left: auto;
+  min-height: 100vh;
+  width: calc(100% - 300px);
+  background-color: #323542;
+}
+
+.main-content .home {
+  height: 100vh;
+  background-image: url('../images/back3.JPG');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.sec-overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(4, 11, 21, 0.72);
+}
+
+.sec-header {
+  color: white;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+.sec-header h1 {
+  font-size: 30px;
+}
+table {
+  border-collapse: collapse;
+  color: white;
+}
+.t-left {
+  text-align: end;
+  border-right: solid;
+  padding-right: 10px;
+}
+
+.t-right {
+  padding-left: 10px;
+}
+
+.home table {
+  margin-top: 60px;
+  margin-left: 120px;
+}
+
+.home table tr {
+  height: 60px;
+}
+
+.row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.achievement {
+  min-height: 100vh;
+}
+
+.personalDetails table tr {
+ height: 40px;
+}
+
+.universityDetails {
+  min-height: 100vh;
+}
+
+.universityDetails table tr {
+  height: 50px;
+}
+
+.skills{
+  min-height: 100vh;
+}
+
+.contact {
+  min-height: 100vh;
+}
+
+.sec-content li{
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+.sec-header{
+  margin-bottom: 20px;
+}
